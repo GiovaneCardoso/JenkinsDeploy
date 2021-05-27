@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--
+    Nesta página: coloque novamente seu nome em "meta author", no interior de "head";
+    Insira um elemento "Collapse" onde o código indica, tipo "acordeão". 
+-->
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta author="Giovane" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizzaria Pedaços</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/estilo.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div
+          class="col-12 border rounded d-flex bg-white"
+          style="height: 100px"
+        >
+          <div
+            class="col-5 text-monospace"
+            style="padding-top: 10px; font-size: 2.8em"
+          >
+            <img src="img/LogoPedacos.png" alt="logo" width="80" /> Pedaços
+          </div>
+          <div class="col-6" style="padding-top: 28px">
+            <ul class="nav justify-content-center">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Carousel</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Cards</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="collapse.html">Collapse</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#">Desativado</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Início Collapse -->
+      <!-- IMPORTANTE: coloque elemento collapse tipo acordeão.  -->
+      <div class="row">
+        <div
+          class="col-12 border mt-1 rounded bg-white"
+          style="min-height: 200px"
+        ></div>
+      </div>
+      <!--Collapse-->
+      <div class="accordion pt-3" id="accordionExample">
+        <div class="card">
+          <div class="card-header bg-success text-white" id="headingOne">
+            <h5 class="mb-0">
+              <button
+                class="btn bg-success text-white"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapseOne"
+                aria-expanded="false"
+                aria-controls="collapseOne"
+              >
+                <h6>De onde surgiu a Pizza?</h6>
+              </button>
+            </h5>
+          </div>
+
+          <div
+            id="collapseOne"
+            class="collapse show"
+            aria-labelledby="headingOne"
+            data-parent="#accordionExample"
+          >
+            <div class="card-body">
+              <p>
+                A história da piza começou com os egípcios. Acredita-se que eles
+                foram os primeiros a misturar farinha com água. Outros afirmam
+                que os primeiros foram os gregos, que faziam massas a base de
+                farinha de trigo, arroz ou grão-de-bico e as assavam em tijolos
+                quentes. A novidade foi parar na Etrúria, na Itália.
+              </p>
+              <p>
+                A piza era um alimento de pessoas humildes do sul da Itália,
+                quando, próximo do início do primeiro milênio, surgiu o termo
+                picea, na cidade de Nápoles, considerada o berço da piza.
+                "Picea" indicava um disco de massa assada com ingredientes por
+                cima. Servida com ingredientes baratos, por ambulantes, a
+                receita objetivava "matar a fome", principalmente a da parte
+                mais pobre da população. Normalmente, a massa de pão recebia,
+                como sua cobertura, toucinho, peixes fritos e queijo.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h5 class="mb-0">
+              <button
+                class="btn bg-light text-dark collapsed"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                <h6>Como chegou no Brasil?</h6>
+              </button>
+            </h5>
+          </div>
+          <div
+            id="collapseTwo"
+            class="collapse"
+            aria-labelledby="headingTwo"
+            data-parent="#accordionExample"
+          >
+            <div class="card-body">
+              <p>
+                Chegou ao Brasil da mesma forma, por meio dos imigrantes
+                italianos, e, hoje, pode ser encontrada facilmente na maioria
+                das cidades brasileiras. Até os anos 1950, era muito mais comum
+                ser encontrada em meio à colônia italiana, tornando-se, logo em
+                seguida, parte da cultura deste país. Desde 1985, comemora-se o
+                dia da piza no dia 10 de julho.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header bg-danger" id="headingThree">
+            <h5 class="mb-0">
+              <button
+                class="btn bg-danger text-white collapsed"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                <h6>De onde surgiu a expressão “acabar em pizza”?</h6>
+              </button>
+            </h5>
+          </div>
+          <div
+            id="collapseThree"
+            class="collapse"
+            aria-labelledby="headingThree"
+            data-parent="#accordionExample"
+          >
+            <div class="card-body">
+              <p>
+                Sabe quando algo acontece e que resulta em nada? Nessas
+                situações, uma frase muito utilizada é “acabar em pizza”,
+                expressão criada no Brasil, especificamente no time de futebol
+                paulista Palmeiras. Na década de 50, os diretores do Palmeiras
+                acabaram se envolvendo em um discussão durante uma de suas
+                reuniões. Para acalmar os ânimos, todos foram convidados a
+                visitar uma pizzaria e acabaram por deixar a confusão para trás.
+                Tudo acabou em pizza.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- fim Collapse -->
+
+      <!-- fim cards com imagens -->
+      <div class="row">
+        <div
+          class="col-12 mt-1 border mt-1 rounded bg-white"
+          style="height: 150px"
+        ></div>
+      </div>
+    </div>
+    <br /><br /><br />
+    <!-- Bootstrap -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
